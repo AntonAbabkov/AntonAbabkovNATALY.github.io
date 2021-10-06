@@ -209,7 +209,7 @@
                             <li>План расстановки электроарматуры</li>
                             <li>Совмещенный план (светильники и электроарматура)</li>
                             <li>План привязок сантехнического оборудования</li>
-                            <div>+(заменить на плюс из CSS кода)</div>
+                            <div class="item_plus"></div>
                             <li>Визуализация помещений (3 вида на каждое помещение)</li>
                             <li>Развертки стен</li>
                             <li>Раскладка плитки</li>
@@ -232,7 +232,7 @@
                             <li>План расстановки электроарматуры</li>
                             <li>Совмещенный план (светильники и электроарматура)</li>
                             <li>План привязок сантехнического оборудования</li>
-                            <div>+(заменить на плюс на CSS коде)</div>
+                            <div class="item_plus"></div>
                             <li>Визуализация помещений (3 вида на каждое помещение)</li>
                             <li>Развертки стен</li>
                             <li>Раскладка плитки</li>
@@ -270,26 +270,31 @@
     <section class="feedback">
         <div class="container">
             <div class="feedback_block">
-                    <div class="feedback_form">
-                        <div class="feedback_form_name">ФИО</div>
-                        <div class="feedback_form_phone">Телефон</div>
-                        <div class="feedback_form_email">email</div>
-                        <div class="feedback_form_descr">Описание</div>
-                        <div class="feedback_form_photo">Фото</div>
-                    </div>
+                <form class="feed-form" action="#">
+                    <input name="name" required placeholder="Ваше имя" type="text">
+                    <input name="phone" required placeholder="Ваш телефон" type="tel">
+                    <input name="email" required placeholder="Ваш E-mail" type="email">
+                    <input name="request" required placeholder="Ваш запрос" type="request" class="request_text">
+                    <input name="photo" required placeholder="Ваши фото" type="photo">
+                    <button class="button">заказать консультацию</button>
+                </form>
             </div>
         </div>
     </section>
 
     <section class="footer">
         <div class="container">
-            <div class="social_links"></div>
-            <div class="emails"></div>
-            <div class="phone_nombers"></div>
+            <div class="contacts">
+                <div class="social_links">
+                    <div class="social_links_title">Мы в соц сетях:</div>
+                </div>
+                <div class="phone_nombers">Телефоны для связи:</div>
+                <div class="emails">E-mails:</div>
+            </div>
         </div>
         <div class="footer_logo">
-            <img src="#" alt="logo-1">
-            <img src="#" alt="logo-2">
+            <img src="icons/лого версия 2.2 (revers).png" alt="logo-1">
+            <img src="icons/лого версия 2.2.png" alt="logo-2">
         </div>
     </section>
 </body>

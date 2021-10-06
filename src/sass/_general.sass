@@ -206,6 +206,39 @@ nav
 			li
 				font-size: 17px
 				font-family: Roboto
+			.item_plus
+				display: flex
+				justify-content: center
+				align-items: center
+				bottom: 35px
+				left: 50%
+				transform: translateX(-50%)
+				width: 26px
+				height: 26px
+				background-color: $text_color_black
+				margin: 8px auto 8px auto
+				border-radius: 100%
+				cursor: pointer
+				&:before
+					content: ''
+					display: block
+					width: 14px
+					height: 2px
+					background-color: $text_color_gold
+					transition: 0.5s all
+				&:after
+					content: ''
+					position: absolute
+					left: 50%
+					transform: translateX(-50%)
+					display: block
+					width: 2px
+					height: 14px
+					background-color: $text_color_gold
+					transition: 0.5s all
+				&:hover
+					&:before, &:after
+					background-color: #FF5656
 			&_price
 				font-size: 26px
 				text-align: center
@@ -225,6 +258,39 @@ nav
 			li
 				font-size: 17px
 				font-family: Roboto
+			.item_plus
+				display: flex
+				justify-content: center
+				align-items: center
+				bottom: 35px
+				left: 50%
+				transform: translateX(-50%)
+				width: 26px
+				height: 26px
+				background-color: $text_color_black
+				margin: 8px auto 8px auto
+				border-radius: 100%
+				cursor: pointer
+				&:before
+					content: ''
+					display: block
+					width: 14px
+					height: 2px
+					background-color: $text_color_gold
+					transition: 0.5s all
+				&:after
+					content: ''
+					position: absolute
+					left: 50%
+					transform: translateX(-50%)
+					display: block
+					width: 2px
+					height: 14px
+					background-color: $text_color_gold
+					transition: 0.5s all
+				&:hover
+					&:before, &:after
+					background-color: #FF5656
 			&_price
 				font-size: 26px
 				text-align: center
@@ -276,19 +342,67 @@ nav
 					font-size: 17px
 
 .feedback
-	background-color: $text_color_black
+	background-color: rgba(41,41,41,0.6)
 	&_block
 		display: flex
 		justify-content: center
-	&_form
-		display: flex
-		margin-top: 30px
-		padding: 20px 10px 20px 10px
+		height: 400px
+		padding: 40px 0px
+		.feed-form
+			display: flex  
+			flex-direction: column
+			width: 300px   
+			input
+				height: 50px
+				border-radius: 5px
+				background-color: #FFFFFF
+				margin-bottom: 15px
+				border: none
+				padding: 0 20px
+				font-weight: 400
+				font-size: 14px
+				&:nth-child(3)
+					margin-bottom: 20px
+			.button
+				width: 300px
+				height: 47px
+				background-color: #d3ba68
+				border-radius: 5px
+				color: #FFFFFF
+				border: none
+				font-size: 16px
+				font-weight: 500
+				text-transform: uppercase
+				font-family: Roboto
+
+.footer
+	height: 150px
+	padding: 20px 0px
+	background-color: $text_color_black
+	.contacts
 		width: 800px
+		display: flex
 		justify-content: center
-		background-color: $text_color_gold
-
-
+		.social_links
+			&_title
+				font-family: Roboto
+				color: white
+		.phone_nombers
+			font-family: Roboto
+			color: white	
+		.emails
+			font-family: Roboto
+			color: white
+	&_logo
+		margin: 0 auto
+		height: 150px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		img
+			width: 140px
+			height: 140px
+			padding: 5px
 
 
 
