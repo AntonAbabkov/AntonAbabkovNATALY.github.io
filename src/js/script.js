@@ -22,5 +22,7 @@ $(document).ready(function(){
         autoplaySpeed: 5000,
         speed: 1000,
         fade: true,
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrow_to_left.svg" alt="arrow to left"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_to_right.svg" alt="arrow to right"></button>',
     });
 });
