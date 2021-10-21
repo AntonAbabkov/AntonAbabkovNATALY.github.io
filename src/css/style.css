@@ -37,27 +37,39 @@ a:hover {
 nav {
   position: fixed;
   width: 100%;
-  height: 50px;
+  height: 60px;
   background-color: #292929;
   z-index: 2;
 }
-
-.menu {
+nav .menu {
   display: flex;
   justify-content: space-between;
-  padding: 12px 70px;
+  padding: 19px 0px 0px 0px;
   margin: 0;
   list-style-type: none;
   font-family: Ardeco;
 }
-.menu a {
+nav .menu_logo {
+  display: flex;
+  transform: translateY(-15px);
+}
+nav .menu_logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+nav .menu_name {
+  color: #FFFFFF;
+  width: 0px;
+}
+nav .menu a {
   text-decoration: none;
   color: black;
   font-style: italic;
   font-weight: bold;
   font-size: 20px;
 }
-.menu .menu_link {
+nav .menu .menu_link {
   color: white;
 }
 .about_us {
@@ -206,10 +218,10 @@ nav {
 
 .services_and_prices {
   padding: 10px 0px 30px 0px;
-  background-image: url(../img/BG_1.1.png);
+  background-image: url(../img/BG_1.2.png);
   background-repeat: no-repeat;
   /** background: url("../img/BG_1.png") center (center / no-repeat) repeat **/
-  background-position: left;
+  background-position: center;
   background-size: cover;
 }
 .services_and_prices .black_button {
@@ -385,48 +397,75 @@ nav {
   height: 4px;
   background-color: #d3ba68;
 }
-.services_and_prices .style_row {
-  flex-direction: column;
-  justify-content: center;
+.services_and_prices .add_services {
+  display: flex;
+  justify-content: space-around;
 }
-.services_and_prices .style_row .add_services {
-  align-items: center;
-}
-.services_and_prices .style_row .add_services .black_button {
+.services_and_prices .add_services_block {
   margin-top: 30px;
-  font-size: 24px;
+  padding: 10px 12px;
+  background-color: #dacfcf;
+  width: 620px;
+}
+.services_and_prices .add_services_block .black_button {
+  margin: 0 auto;
+  height: 30px;
+  width: 165px;
+  padding: 2px 15px;
   background-color: #000000;
   color: white;
   border-radius: 25px;
   text-transform: uppercase;
-  width: 200px;
-  text-align: center;
+  cursor: pointer;
 }
-.services_and_prices .style_row .add_services .black_button h2 {
-  text-align: center;
+.services_and_prices .add_services_block .black_button h2 {
+  font-family: Roboto;
+  font-size: 20px;
 }
-.services_and_prices .style_row .add_services_block {
+.services_and_prices .add_services_supervision {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 900;
+}
+.services_and_prices .add_services_equipment {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 900;
+}
+.services_and_prices .add_services ul li {
+  font-family: Roboto;
+  font-size: 17px;
+}
+.services_and_prices .add_services_discount {
   margin-top: 30px;
   padding: 10px 12px;
   background-color: #dacfcf;
+  width: 300px;
+  height: 90px;
 }
-.services_and_prices .style_row .add_services_block ul li {
-  font-size: 17px;
+.services_and_prices .add_services_discount .black_button {
+  margin: 0 auto;
+  height: 30px;
+  width: 112px;
+  padding: 2px 15px;
+  background-color: #000000;
+  color: white;
+  border-radius: 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.services_and_prices .add_services_discount .black_button h2 {
   font-family: Roboto;
+  font-size: 20px;
 }
-.services_and_prices .style_row .add_services_supervision {
-  margin-bottom: 10px;
-  font-size: 24px;
-  font-weight: 900;
-}
-.services_and_prices .style_row .add_services_equipment {
-  margin-bottom: 10px;
-  font-size: 24px;
-  font-weight: 900;
-}
-.services_and_prices .style_row .add_services ul li {
+.services_and_prices .add_services_discount_text {
   font-family: Roboto;
-  font-size: 17px;
+  font-size: 23px;
+  margin-top: 10px;
+}
+.services_and_prices .add_services_discount_text sup {
+  font-size: 16px;
+  font-family: roboto;
 }
 
 .feedback {
@@ -499,25 +538,59 @@ nav {
   height: 145px;
   background-color: #292929;
   display: flex;
+  justify-content: space-between;
 }
 .footer .contacts {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  width: calc( 100% - 280px );
+}
+.footer .contacts_title {
+  margin-top: 10px;
   text-align: center;
+  font-family: roboto;
+  color: #FFFFFF;
+  font-size: 20px;
+  text-transform: uppercase;
 }
-.footer .contacts .social_links_title {
-  font-family: Roboto;
-  color: white;
+.footer .contacts_block {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
 }
-.footer .contacts .phone_nombers {
-  font-family: Roboto;
-  color: white;
+.footer .contacts_block_1 {
+  display: flex;
+  flex-direction: row;
 }
-.footer .contacts .emails {
-  font-family: Roboto;
-  color: white;
+.footer .contacts_block_1_text {
+  font-family: roboto;
+  color: #FFFFFF;
+  margin-right: 8px;
+}
+.footer .contacts_block_1_phones {
+  width: 150px;
+}
+.footer .contacts_block_1_phones a {
+  font-family: roboto;
+  color: #FFFFFF;
+}
+.footer .contacts_block_2 .title {
+  font-family: roboto;
+  color: #FFFFFF;
+}
+.footer .contacts_block_2 .emails {
+  display: flex;
+  flex-direction: row;
+}
+.footer .contacts_block_2 .emails .email {
+  font-family: roboto;
+  color: #FFFFFF;
+  margin-right: 8px;
+  font-size: 16px;
+}
+.footer .contacts_block_2 .emails .email_1 {
+  font-family: roboto;
+  color: #FFFFFF;
+  width: 60px;
+  font-size: 16px;
 }
 .footer_logo {
   margin: 0px;
