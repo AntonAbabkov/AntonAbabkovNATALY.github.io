@@ -164,7 +164,7 @@ nav {
 
 .us_projects {
   margin: auto;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0px 40px 0px;
   background-color: rgba(41, 41, 41, 0.6);
 }
 .us_projects_title {
@@ -189,6 +189,7 @@ nav {
 .us_projects .card-img-top {
   position: relative;
   width: 100%;
+  height: 267px;
 }
 .us_projects .card {
   border-style: none;
@@ -205,8 +206,11 @@ nav {
 
 .services_and_prices {
   padding: 10px 0px 30px 0px;
-  background: url("../img/BG_1.png") center center/50% repeat;
-  background-position: 16%;
+  background-image: url(../img/BG_1.1.png);
+  background-repeat: no-repeat;
+  /** background: url("../img/BG_1.png") center (center / no-repeat) repeat **/
+  background-position: left;
+  background-size: cover;
 }
 .services_and_prices .black_button {
   margin: 0 auto;
@@ -239,7 +243,6 @@ nav {
   background-color: #dacfcf;
   width: 350px;
   height: min-content;
-  border: outset 5px;
 }
 .services_and_prices .tarif_block .planing_title {
   margin-bottom: 10px;
@@ -262,7 +265,6 @@ nav {
   padding: 10px 12px;
   width: 350px;
   height: min-content;
-  border: outset 5px;
 }
 .services_and_prices .tarif_block .standart_title {
   margin-bottom: 10px;
@@ -321,7 +323,6 @@ nav {
   background-color: #dacfcf;
   width: 350px;
   height: min-content;
-  border: outset 5px;
 }
 .services_and_prices .tarif_block .premium_title {
   margin-bottom: 10px;
@@ -378,10 +379,11 @@ nav {
   margin: 0 auto;
   margin-top: 40px;
   display: block;
+  position: inherit;
   align-items: center;
   width: 800px;
   height: 4px;
-  background-color: #1fbad6;
+  background-color: #d3ba68;
 }
 .services_and_prices .style_row {
   flex-direction: column;
@@ -407,7 +409,6 @@ nav {
   margin-top: 30px;
   padding: 10px 12px;
   background-color: #dacfcf;
-  border: outset 5px;
 }
 .services_and_prices .style_row .add_services_block ul li {
   font-size: 17px;
@@ -483,7 +484,7 @@ nav {
 .feedback_block .feed-form-text .submit {
   width: 300px;
   height: 50px;
-  background-color: #d3ba68;
+  background-color: #C70101;
   border-radius: 5px;
   color: #FFFFFF;
   border: none;

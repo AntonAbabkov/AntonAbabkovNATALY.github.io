@@ -137,7 +137,7 @@ nav
 
 .us_projects
 	margin: auto
-	padding: 10px 0px 10px 0px
+	padding: 10px 0px 40px 0px
 	background-color: rgb(41, 41, 41, 0.6)
 	&_title
 		text-align: center
@@ -158,6 +158,7 @@ nav
 	.card-img-top
 		position: relative
 		width: 100%
+		height: 267px
 
 	.card
 		border-style: none
@@ -171,8 +172,11 @@ nav
 
 .services_and_prices
 	padding: 10px 0px 30px 0px
-	background: url("../img/BG_1.png") center (center / 50%) repeat
-	background-position: 16%
+	background-image: url(../img/BG_1.1.png)
+	background-repeat: no-repeat
+	/** background: url("../img/BG_1.png") center (center / no-repeat) repeat **/
+	background-position: left
+	background-size: cover
 	.black_button
 		margin: 0 auto
 		height: 43px
@@ -201,7 +205,6 @@ nav
 			background-color: #dacfcf
 			width: 350px
 			height: min-content
-			border: outset 5px
 			&_title
 				margin-bottom: 10px
 				text-align: center
@@ -220,7 +223,6 @@ nav
 			padding: 10px 12px
 			width: 350px
 			height: min-content
-			border: outset 5px
 			&_title
 				margin-bottom: 10px
 				text-align: center
@@ -272,7 +274,6 @@ nav
 			background-color: #dacfcf
 			width: 350px
 			height: min-content
-			border: outset 5px
 			&_title
 				margin-bottom: 10px
 				text-align: center
@@ -322,10 +323,11 @@ nav
 		margin: 0 auto
 		margin-top: 40px
 		display: block
+		position: inherit
 		align-items: center
 		width: 800px
 		height: 4px
-		background-color: #1fbad6
+		background-color: #d3ba68
 	.style_row
 		flex-direction: column
 		justify-content: center
@@ -346,7 +348,6 @@ nav
 				margin-top: 30px
 				padding: 10px 12px
 				background-color: #dacfcf
-				border: outset 5px
 				ul
 					li
 						font-size: 17px
@@ -409,7 +410,7 @@ nav
 				.submit
 					width: 300px
 					height: 50px
-					background-color: #d3ba68
+					background-color: $text_color_red
 					border-radius: 5px
 					color: #FFFFFF
 					border: none
