@@ -38,7 +38,7 @@ nav {
   position: fixed;
   width: 100%;
   height: 50px;
-  background-color: rgba(41, 41, 41, 0.6);
+  background-color: #292929;
   z-index: 2;
 }
 
@@ -60,34 +60,12 @@ nav {
 .menu .menu_link {
   color: white;
 }
-.subheader .quote {
-  text-align: center;
-  font-family: Ardeco;
-  padding-top: 75px;
-  font-size: 24px;
-}
-.subheader .about_us_promo {
-  padding-top: 20px;
-  font-family: Ardeco;
-  text-align: center;
-}
-.subheader .box {
-  display: flex;
-  justify-content: center;
-}
-.subheader .box .about_us_promo_list .about_us_list {
-  line-height: 30px;
-  font-family: Ardeco;
-  font-size: 23px;
-  text-align: left;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  padding-bottom: 15px;
-}
-
 .about_us {
-  padding: 20px 0px 20px 0px;
+  padding: 70px 0px 20px 0px;
   background-color: #c0b1a4;
+}
+.about_us_promo {
+  text-align: center;
 }
 .about_us .carousel {
   width: 100%;
@@ -164,6 +142,26 @@ nav {
   font-family: Roboto;
 }
 
+.subheader .quote {
+  text-align: center;
+  font-family: Ardeco;
+  padding-top: 15px;
+  font-size: 24px;
+}
+.subheader .box {
+  display: flex;
+  justify-content: center;
+}
+.subheader .box .about_us_promo_list .about_us_list {
+  line-height: 30px;
+  font-family: Ardeco;
+  font-size: 23px;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 15px;
+}
+
 .us_projects {
   margin: auto;
   padding: 10px 0px 10px 0px;
@@ -193,13 +191,12 @@ nav {
   width: 100%;
 }
 .us_projects .card {
-  border-style: groove;
-  border-width: 5px;
+  border-style: none;
 }
 .us_projects .card .card-body {
   background-color: #fff;
   padding: 5px 5px 5px 5px;
-  border-style: groove;
+  border-style: none;
 }
 .us_projects .card .card-body .btn {
   color: black;
